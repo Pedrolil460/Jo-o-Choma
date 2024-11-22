@@ -1,0 +1,153 @@
+/* Estilo geral da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #07ffd6;
+    color: #c9bfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #6f01ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Container de ícones */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    border-radius: 15px;
+  }
+  
+  .icon:hover:before {
+    opacity: 1;
+  }
+  
+  /* Estilo dos ícones */
+  .instagram {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  }
+  
+  .playstation {
+    background-color: #003b5c;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/PlayStation_5_logo.svg/1024px-PlayStation_5_logo.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whatsapp:before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    width: 60px;
+    height: 60px;
+  }
+  
+  .steam {
+    background-color: #171a21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steam:before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/Steam_icon_logo.svg');
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Caixa de informações */
+  .info-box {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #00a2be;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    color: #333;
+  }
+  
+  .info-box p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .info-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Container de gráfico */
+  .chart-container {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 50px;
+  }
+  

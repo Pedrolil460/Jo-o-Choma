@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ícones e Gráficos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Plataformas que uso em meu dia dia</h1>
+    <div class="icons">
+      <div class="icon instagram" onclick="showInfo('Instagram')"></div>
+      <div class="icon playstation" onclick="showInfo('PlayStation')"></div>
+      <div class="icon whatsapp" onclick="showInfo('WhatsApp')"></div>
+      <div class="icon steam" onclick="showInfo('Steam')"></div>
+    </div>
+    <div id="infoBox" class="info-box">
+      <h2>Informações</h2>
+      <p>Escolha uma plataforma para ver os gráficos!</p>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="chart-container">
+      <canvas id="platformChart" width="400" height="300"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
